@@ -23,7 +23,8 @@ O objetivo é fornecer uma ferramenta útil para instituições de ensino ou est
 * **CSS3:** Estilização da interface do usuário.
 * **JavaScript:** Manipulação do DOM, interatividade e comunicação com o backend (API Fetch).
 
-### Backend 🐍<0xF0><0x9F><0x9A><0x80>🔗
+### Backend 🐍🔗
+<0xF0><0x9F><0x9A><0x80>
 * **Python:** Linguagem principal para o backend e Machine Learning.
 * **Flask:** Microframework web para criar a API RESTful e servir a aplicação.
 * **Flask-CORS:** Extensão Flask para lidar com Cross-Origin Resource Sharing (CORS), permitindo a comunicação entre frontend e backend.
