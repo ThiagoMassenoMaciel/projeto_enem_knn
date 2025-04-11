@@ -32,79 +32,34 @@ O objetivo é fornecer uma ferramenta útil para instituições de ensino ou est
 
 * **pandas** 🐼: Para leitura, manipulação e pré-processamento eficiente dos dados (incluindo arquivos `.ods`).
 * **scikit-learn** 🤖: Para implementação do algoritmo KNN Regressor, pré-processamento (OneHotEncoder, Pipeline) e avaliação de modelos.
-* **Flask** <0xF0><0x9F><0x9A><0x80>: Criação do servidor web e rotas da API.
+* **Flask** : Criação do servidor web e rotas da API.
 * **Flask-CORS** 🔗: Habilita requisições entre diferentes origens (frontend -> backend).
 * **joblib** 💾: Para salvar e carregar eficientemente o modelo de Machine Learning treinado (`pipeline`).
 * **odfpy** 📄: Biblioteca necessária para que o `pandas` possa ler arquivos no formato OpenDocument Spreadsheet (`.ods`).
 
-## 📁 Estrutura do Projeto
-Okay, com base em tudo que construímos e na imagem da interface que você forneceu, aqui está um README.md profissional para o seu projeto.
-
-Instrução: Copie e cole o texto abaixo em um novo arquivo chamado README.md na pasta raiz do seu projeto (projeto_enem_knn/). Certifique-se de colocar a imagem print interface usuário.png também na pasta raiz do projeto, ou ajuste o caminho no código Markdown abaixo se preferir colocá-la em outra pasta (ex: images/).
-
-Markdown
-
-# 📊 Previsor de Notas ENEM com KNN 🚀
-
-![Interface do Usuário](print%20interface%20usuário.png)
-
-## 📝 Resumo
-
-Este projeto é uma aplicação web Full Stack desenvolvida para prever as notas de um aluno no Exame Nacional do Ensino Médio (ENEM) com base em suas informações socioeconômicas e de localidade. Utiliza um modelo de Machine Learning K-Nearest Neighbors (KNN) do tipo Regressor, treinado com os microdados oficiais do ENEM 2023.
-
-A aplicação permite que um usuário insira os dados de um novo aluno através de um formulário web simples e, ao submeter, recebe como resposta a previsão das notas nas cinco áreas de conhecimento do exame:
-
-* Matemática e suas Tecnologias (NU_NOTA_MT)
-* Ciências da Natureza e suas Tecnologias (NU_NOTA_CN)
-* Linguagens, Códigos e suas Tecnologias (NU_NOTA_LC)
-* Ciências Humanas e suas Tecnologias (NU_NOTA_CH)
-* Nota da Redação (NU_NOTA_REDACAO)
-
-O objetivo é fornecer uma ferramenta útil para instituições de ensino ou estudantes estimarem um desempenho potencial no exame. 🎓
-
-## ✨ Tecnologias Utilizadas
-
-### Frontend 🌐🎨
-* **HTML5:** Estruturação da página web.
-* **CSS3:** Estilização da interface do usuário.
-* **JavaScript:** Manipulação do DOM, interatividade e comunicação com o backend (API Fetch).
-
-### Backend 🐍<0xF0><0x9F><0x9A><0x80>🔗
-* **Python:** Linguagem principal para o backend e Machine Learning.
-* **Flask:** Microframework web para criar a API RESTful e servir a aplicação.
-* **Flask-CORS:** Extensão Flask para lidar com Cross-Origin Resource Sharing (CORS), permitindo a comunicação entre frontend e backend.
-
-## ⚙️ Bibliotecas Python (Backend)
-
-* **pandas** 🐼: Para leitura, manipulação e pré-processamento eficiente dos dados (incluindo arquivos `.ods`).
-* **scikit-learn** 🤖: Para implementação do algoritmo KNN Regressor, pré-processamento (OneHotEncoder, Pipeline) e avaliação de modelos.
-* **Flask** <0xF0><0x9F><0x9A><0x80>: Criação do servidor web e rotas da API.
-* **Flask-CORS** 🔗: Habilita requisições entre diferentes origens (frontend -> backend).
-* **joblib** 💾: Para salvar e carregar eficientemente o modelo de Machine Learning treinado (`pipeline`).
-* **odfpy** 📄: Biblioteca necessária para que o `pandas` possa ler arquivos no formato OpenDocument Spreadsheet (`.ods`).
 
 ## 📁 Estrutura do Projeto
-
+```
 projeto_enem_knn/
 ├── backend/
 │   ├── data/
-│   │   └── microdados_enem2023.ods  # <-- Coloque o arquivo de microdados aqui!
+│   │   └── microdados_enem2023.ods  
 │   ├── model/
-│   │   ├── knn_model.joblib        # Modelo treinado (gerado pelo train_model.py)
-│   │   └── preprocessor.joblib     # Pré-processador salvo (opcional, gerado)
+│   │   ├── knn_model.joblib        
+│   │   └── preprocessor.joblib     
 │   ├── static/
 │   │   ├── css/
-│   │   │   └── style.css           # Estilos CSS
+│   │   │   └── style.css           
 │   │   └── js/
-│   │       └── script.js           # Lógica JavaScript do frontend
+│   │       └── script.js           
 │   ├── templates/
-│   │   └── index.html              # Estrutura HTML da página
-│   ├── app.py                      # Aplicação Flask (servidor e API)
-│   ├── train_model.py              # Script para treinar o modelo KNN
-│   └── requirements.txt            # Lista de dependências Python
-├── print interface usuário.png     # Screenshot da interface (usado no README)
-└── README.md                       # Este arquivo
-
+│   │   └── index.html              
+│   ├── app.py                      
+│   ├── train_model.py              
+│   └── requirements.txt            
+├── print interface usuário.png     
+└── README.md                      
+```
 ## 🚀 Como Executar
 
 1.  **Clone o Repositório:**
