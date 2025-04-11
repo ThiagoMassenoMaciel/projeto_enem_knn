@@ -64,7 +64,7 @@ projeto_enem_knn/
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO_GIT>
+    git clone https://github.com/ThiagoMassenoMaciel/projeto_enem_knn.git
     cd projeto_enem_knn
     ```
 2.  **Navegue até o Backend:**
